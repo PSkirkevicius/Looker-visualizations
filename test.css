@@ -51,9 +51,9 @@ body {
 
 .reportTable {
     font-family: 'Inter', sans-serif;
-    color: #696969;
+    color: #000000; /* Changed to black */
     border-collapse: collapse;
-    border-spacing: 3px;
+    border-spacing: 0; /* Removed spacing between cells */
     table-layout: fixed;
     font-size: 16px;
 }
@@ -65,8 +65,8 @@ body {
 th.headerCell {
     background-color: #3e5FFF;
     color: white;
-    padding: 5px;
-    border-bottom: 1px solid #BDC3C7;
+    padding: 8px; /* Increased padding */
+    border: 1px solid #2040CC; /* More vivid border color for header cells */
     font-size: 18px;
     font-weight: bold;
 }
@@ -78,14 +78,14 @@ th.headerCell {
 .headerCell.transposed.dimension,
 .headerCell.transposed.dimension.merged {
     background-color: #3e5FFF;
-    border-right: 1px solid #BDC3C7;
+    border: 1px solid #2040CC; /* More vivid border color for header cells */
     color: white;
 }
 
 .rowCell {
-    vertical-align: super;
-    padding-left: 5px;
-    border-bottom: 1px solid #BDC3C7;
+    vertical-align: middle; /* Changed from super to middle */
+    padding: 8px; /* Increased padding */
+    border: 1px solid #A0A0A0; /* More vivid border color for row cells */
 }
 
 .rowCell.merged {
@@ -141,7 +141,7 @@ th.headerCell {
 }
 
 .estimate {
-    color: darkgray !important;
+    color: #404040 !important; /* Changed from darkgray to a darker gray */
 }
 
 .singleIndex {
@@ -155,7 +155,7 @@ th.headerCell {
 }
 
 .total {
-    border-top: 2px solid #696969 !important;
+    border-top: 2px solid #000000 !important; /* Changed to black */
     font-weight: bold !important;
 }
 
